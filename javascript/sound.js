@@ -5,11 +5,9 @@ $(document).ready(() => {
     if (paused) {
       $(".sound").html("Desliga");
       $("#audio")[0].play();
+      paused = !paused;
     } else {
-      $(".sound").html("Liga");
-      $("#audio")[0].pause();
+      $(".sound").html("Ops... Infelizmente o botão de desligar quebrou🥶");
     }
-
-    paused = !paused;
   });
 });
